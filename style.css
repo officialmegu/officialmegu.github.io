@@ -7,6 +7,11 @@
     font-weight: bold;
 }
 
+html, body {
+    height: 100%;
+    background-color: cornsilk;
+}
+
 a {
     color: azure;
     text-decoration: none;
@@ -43,7 +48,6 @@ nav a:hover {
 
 main {
     text-align: center;
-    background-color: cornsilk;
 }
 
 .top-image img {
