@@ -37,6 +37,10 @@ nav li {
     padding: 0 10px;
 }
 
+nav li:hover {
+    color: rgba(0, 0, 0, 0.801);
+}
+
 main {
     text-align: center;
 }
