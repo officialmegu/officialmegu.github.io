@@ -12,14 +12,14 @@ a {
 header {
     background-color: #00b888;
     padding: 0 5%;
-    height: 80px;
+    height: 150px;
     align-items: center;
     display: flex;
     justify-content: space-between;
 }
 
 .header-logo img {
-    height: 70px;
+    height: 120px;
     margin-top: 7px;
 }
 
@@ -43,6 +43,7 @@ main {
     height: 400px;
     object-fit: cover;
     object-position: 0 70%;
+    display: none;
 }
 
 .section {
