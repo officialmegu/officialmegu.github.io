@@ -1,15 +1,21 @@
+@font-face {
+    font-family: TanukiMagic;
+    src: url(fonts/TanukiMagic.ttf) format("truetype");
+}
+
 * {
     border: 0;
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: /*Arial, Helvetica, sans-serif*/TanukiMagic;
     color: black;
     font-weight: bold;
 }
 
 html, body {
     height: 100%;
-    background-color: cornsilk;
+    /*background-color: cornsilk;*/
+    background-image: url(images/carpet.png);
 }
 
 a {
@@ -38,8 +44,12 @@ nav{
 nav li {
     list-style: none;
     display: inline-block;
-    font-size: x-large;
+    font-size: 30px;
     padding: 0 10px;
+}
+
+nav a {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav a:hover {
@@ -68,4 +78,8 @@ main {
     display: inline-block;
     border-bottom: solid 3px black;
     margin: 20px 0;
+}
+
+.section p {
+    font-size: 20px;
 }
