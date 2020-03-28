@@ -10,7 +10,7 @@ a {
 }
 
 header {
-    background-color: #00A968;
+    background-color: #00b888;
     padding: 0 5%;
     height: 80px;
     align-items: center;
@@ -18,9 +18,9 @@ header {
     justify-content: space-between;
 }
 
-.header-logo {
-    float: left;
-    font-size: x-large;
+.header-logo img {
+    height: 70px;
+    margin-top: 7px;
 }
 
 nav{
@@ -43,7 +43,6 @@ main {
     height: 400px;
     object-fit: cover;
     object-position: 0 70%;
-    opacity: 80%;
 }
 
 .section {
