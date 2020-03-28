@@ -37,12 +37,13 @@ nav li {
     padding: 0 10px;
 }
 
-nav li:hover {
-    color: rgba(0, 0, 0, 0.801);
+nav a:hover {
+    color: rgb(230, 230, 230);
 }
 
 main {
     text-align: center;
+    background-color: cornsilk;
 }
 
 .top-image img {
@@ -55,6 +56,7 @@ main {
 
 .section {
     padding: 10px 5%;
+    
 }
 
 .section > h2 {
