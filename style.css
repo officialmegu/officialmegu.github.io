@@ -7,15 +7,17 @@
     border: 0;
     padding: 0;
     margin: 0;
-    font-family: /*Arial, Helvetica, sans-serif*/TanukiMagic;
-    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
     font-weight: bold;
 }
 
 html, body {
     height: 100%;
-    /*background-color: cornsilk;*/
-    background-image: url(images/carpet.png);
+	background-color: #00b888;
+    background-image: radial-gradient(rgb(25, 110, 102) 1px, transparent 1px);
+    background-size: 20px 20px;
+    /*background-image: url(images/carpet.png);*/
 }
 
 a {
@@ -24,12 +26,13 @@ a {
 }
 
 header {
-    background-color: #00b888;
+	background-color: #00b888;
     padding: 0 5%;
     height: 150px;
     align-items: center;
     display: flex;
     justify-content: space-between;
+    border-bottom: solid 1px;
 }
 
 .header-logo img {
@@ -70,16 +73,17 @@ main {
 
 .section {
     padding: 10px 5%;
-    
+    text-shadow: 0.5px 0.5px #808080;
 }
 
 .section > h2 {
     font-size: 40px;
     display: inline-block;
-    border-bottom: solid 3px black;
+    border-bottom: solid 3px;
     margin: 20px 0;
 }
 
-.section p {
+.section > p {
     font-size: 20px;
+    font-weight: 300;
 }
