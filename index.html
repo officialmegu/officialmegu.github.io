@@ -5,6 +5,19 @@
         <title>mugU</title>
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="images/fabicon.png">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script>
+            $(function(){
+                $('a[href^="#"]').click(function() {
+                    var speed = 1000;
+                    var href= $(this).attr("href");
+                    var target = $(href == "#" || href == "" ? 'html' : href);
+                    var position = target.offset().top;
+                    $('body,html').animate({scrollTop:position}, speed, 'swing');
+                    return false;
+                });
+            });
+        </script>
     </head>
     <body>
         <header>
@@ -14,35 +27,31 @@
             <div class="header-menu">
                 <nav>
                     <ul>
-                        <li><a href="">Mission</a></li>
-                        <li><a href="">事業内容</a></li>
-                        <li><a href="">お知らせ</a></li>
-                        <li><a href="">お問い合わせ</a></li>
+                        <li><a href="#1">Mission</a></li>
+                        <li><a href="#2">事業内容</a></li>
+                        <li><a href="#3">お知らせ</a></li>
+                        <li><a href="#4">お問い合わせ</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <main>
-            <div class="top-image">
-                <img src="images/top_image.jpg" alt="">
-            </div>
-            
-            <div class="section mission">
+        <main>            
+            <div class="section mission" id="1">
                 <h2>Mission</h2>
                 <p>“あなただけの人生との「めぐり逢い」を創り出す”</p>
             </div>
-            <div class="section organization">
+            <div class="section organization" id="2">
                 <h2>事業内容</h2>
                 <p>megUは新たな出会いを創造し、あなただけの人生を生きるサポートをします。</p>
                 <p>Instagram事業では、あなたの人生を彩る素敵な趣味や習慣をご紹介。</p>
                 <p>「めぐり逢い」をサポートするアプリを現在開発中。</p>
                 <p>あなたの「めぐり逢い」の立ち会い人になれる事を切に願っています。</p>
             </div>
-            <div class="section information">
+            <div class="section information" id="3">
                 <h2>お知らせ</h2>
                 <p>4月1日、Instagram配信開始！</p>
             </div>
-            <div class="section contact">
+            <div class="section contact" id="4">
                 <h2>お問い合わせ</h2>
                 <p>Email: officialmegu@gmail.com</p>
             </div>
