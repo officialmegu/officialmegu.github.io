@@ -101,3 +101,17 @@ footer {
 footer p {
     letter-spacing: 1px;
 }
+
+.btn-gradient-radius {
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #FFF;
+    background-image: linear-gradient(45deg, #FFC107 0%, #ff5f5f 50%, #6f35f7 100%);
+    transition: .4s;
+}
+  
+.btn-gradient-radius:hover {
+    background-image: linear-gradient(45deg, rgb(253, 202, 47) 0%, #fd8080 50%, #8b5bfa 100%);
+}
